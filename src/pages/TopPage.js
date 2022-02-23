@@ -4,14 +4,13 @@ import Selector from "../compornents/Selector";
 import Results from "../compornents/Results";
 
 
-const TopPage = ({countriesJson, setCountry, getCountryData, countryData, loading})=>{
+const TopPage = ({countriesJson, setCountry, countryData, loading})=>{
     return(
         <div className="top-page-container">
             <div>
             <Header />
             <Title />
-            <Selector countriesJson={countriesJson} setCountry={setCountry} 
-            getCountryData={getCountryData} />
+            <Selector countriesJson={countriesJson} setCountry={setCountry} />
             <Results countryData={countryData} loading={loading} />
             </div>
         </div>
