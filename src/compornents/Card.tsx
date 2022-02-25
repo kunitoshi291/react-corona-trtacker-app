@@ -1,4 +1,7 @@
-const Card = ({allCountriesData})=> {
+import { CardType } from "../types";
+
+const Card = ({allCountriesData}:CardType)=> {
+ 
     return (
         <div className="card-container">
             {allCountriesData.map((singleData, index) =>
